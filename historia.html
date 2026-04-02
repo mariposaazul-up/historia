@@ -51,18 +51,13 @@ scroll-behavior:smooth;
   overflow:hidden;
 }
 
-@media (max-width:768px){
-  .img-wrap{
-    width:100%;
-  }
-}
-
   @media (max-width:1024px){
   .img-wrap{
     width:100%;
   }
 
-  .galeria{
+   .galeria{
+    padding:0; /* 🔥 esto era el problema */
     scroll-padding-left:0;
     scroll-padding-right:0;
   }
